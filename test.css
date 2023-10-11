@@ -1,0 +1,48 @@
+html,body{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header{
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 64px;
+    z-index: 100;
+    background-color: rgb(0, 0, 0);
+    
+}
+header a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: 700;
+}
+
+header a:active, a:focus{
+    text-decoration: underline;
+}
+
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+.premier{
+    background-color: rgb(171, 198, 198);
+    height: 800px;
+}
+
+.deuxieme{
+    background-color: #913939;
+    height: 600px;
+}
+
+.troisieme{
+    background-color: rgb(49, 205, 205);
+    height: 900px;
+}

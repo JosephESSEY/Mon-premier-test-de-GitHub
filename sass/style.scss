@@ -1,0 +1,57 @@
+body{
+    text-align: center;
+    margin: 20px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(187, 214, 238);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px rgba(0,0,0,.1);
+
+    .name{
+        font-weight: 900;
+    }
+
+    nav a{
+        color: black;
+        text-decoration: none;
+        margin: 10px;
+        padding: 8px;
+
+        &:hover{
+            text-decoration: underline;
+            text-underline-offset: 25px;
+            text-decoration-thickness: 3px;
+            text-decoration-color: black;
+            color: red;
+            font-weight: 900;
+            transition: .3s;
+        }
+    }
+}
+
+.hide-completed .is-completed
+{
+    display: none !important;
+}
+
+
+.hide-todo .is-not-completed
+{
+    display: none!important;
+}
+
+li {
+    color: rgb(255, 255, 255) !important;
+    background-color: rgb(0, 0, 0) !important;
+
+    &:hover{
+        transform: scale(1.1);
+        color: rgb(0, 0, 0) !important;
+        background-color: rgb(255, 255, 255) !important;
+        transition: .3s;
+    }
+}
